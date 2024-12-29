@@ -7,7 +7,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.min.js"></script>
+<link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
@@ -31,7 +32,9 @@
           <li><a href="#service">SERVICE</a></li>
           <li><a href="#price">PRICE</a></li>
           <li><a href="#client">CLIENT</a></li>
-          <button class="btn">Contact Us</button>
+          <li>
+            <button class="btn">Contact Us</button>
+          </li>
         </ul>
       </nav>
       <div class="section__container header__container" id="home">
@@ -121,29 +124,31 @@
 
     <section class="customisation">
       <div class="section__container customisation__container">
-        <p class="section__subheader">OUR CUSTOMISATION</p>
-        <h2 class="section__header">
-          Car Serving Matched with Great Workmanship
-        </h2>
-        <p class="section__description">
-          Our dedicated team of skilled technicians and mechanics takes pride in
-          delivering top-tier servicing for your beloved vehicle.
-        </p>
+        <div class="customisation__content">
+          <p class="section__subheader">OUR CUSTOMISATION</p>
+          <h2 class="section__header">
+            Car Serving Matched with Great Workmanship
+          </h2>
+          <p class="section__description">
+            Our dedicated team of skilled technicians and mechanics takes pride in
+            delivering top-tier servicing for your beloved vehicle.
+          </p>
+        </div>
         <div class="customisation__grid">
           <div class="customisation__card">
-            <h4>65</h4>
+            <h4 class="counter" id="counter" data-target="65">0</h4>
             <p>Total Projects</p>
           </div>
           <div class="customisation__card">
-            <h4>165</h4>
+            <h4 class="counter" data-target="165">0</h4>
             <p>Transparency</p>
           </div>
           <div class="customisation__card">
-            <h4>463</h4>
+            <h4 class="counter" data-target="463">0</h4>
             <p>Done Projects</p>
           </div>
           <div class="customisation__card">
-            <h4>5063</h4>
+            <h4  class="counter" data-target="5063">0</h4>
             <p>Got Awards</p>
           </div>
         </div>
@@ -334,9 +339,10 @@
     <div class="footer__bar">
       Copyright © 2023 Web Design Mastery. All rights reserved.
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
